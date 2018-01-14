@@ -19,7 +19,7 @@ public class Main {
         }
         // Вызов необходимого метода
         try {
-            Class<?> clazz = Class.forName("ru.sbt.qa.tools.cryptoutil." + args[0]);
+            Class<?> clazz = Class.forName("com.rmz.cryptoutil." + args[0]);
             Constructor<?> constructor = clazz.getConstructor();
             Object classObject = constructor.newInstance();
             Method method = clazz.getMethod(args[0], String.class);
@@ -28,7 +28,7 @@ public class Main {
             System.out.print("Class! " + args[0] + "not found!\n");
             System.exit(1);
         } catch (Exception ie) {
-            System.out.print("Exception_in_method_ru.sbt.qa.tools.cryptoutil." + args[0] + "!\r\n");
+            System.out.print("Exception_in_method_com.rmz.cryptoutil." + args[0] + "!\r\n");
             System.exit(1);
         }
     }
