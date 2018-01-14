@@ -47,7 +47,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.rmz.db.DB</mainClass>
+                            <mainClass>com.rmz.cryptoutil.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
